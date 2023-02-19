@@ -1,9 +1,8 @@
 ﻿
-class HelloWorld
+class Homework
 {
     static void Main(string[] args)
     {
-        int calc = 5 + 5;
-        Console.WriteLine(calc);
+         var homework = new Homework();
     }
 }
