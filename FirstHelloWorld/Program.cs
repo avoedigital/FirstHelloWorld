@@ -3,6 +3,7 @@ class HelloWorld
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Wold");
+        int calc = 5 + 5;
+        Console.WriteLine(calc);
     }
 }
