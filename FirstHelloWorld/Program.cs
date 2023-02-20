@@ -32,7 +32,7 @@ class HomeWork
         float height = Int32.Parse(Console.ReadLine());
         
         Console.Write("Enter your weight: ");
-        float weight = Int32.Parse(Console.ReadLine());
+        double weight = double.Parse(Console.ReadLine());
 
         
         Console.WriteLine(firstName + " " + surName);
@@ -43,13 +43,14 @@ class HomeWork
         //HomeWork 3:
 
         Console.WriteLine("Please Enter your height : "); 
-        float height1 = Int32.Parse(Console.ReadLine());
+        double height1 = double.Parse(Console.ReadLine());
 
         Console.WriteLine("Please Enter your weight : ");
-        float weight1 = Int32.Parse(Console.ReadLine());
+        double weight1 = double.Parse(Console.ReadLine());
 
-        float Bmi = weight1 / height1 / 100 * height1 / 100;
+        double Bmi = weight1 / (height1  * height1);
         Console.WriteLine("Your Bmi is equel " + Bmi);
+
 
         //HomewWork 4
         string vertical = "|";
