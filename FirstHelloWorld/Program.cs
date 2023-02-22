@@ -29,7 +29,7 @@ class HomeWork
         int age = Int32.Parse(Console.ReadLine());
         
         Console.Write("Enter your height: ");
-        float height = Int32.Parse(Console.ReadLine());
+        float height = float.Parse(Console.ReadLine());
         
         Console.Write("Enter your weight: ");
         double weight = double.Parse(Console.ReadLine());
