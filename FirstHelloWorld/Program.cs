@@ -42,13 +42,13 @@ class HomeWork
 
         //HomeWork 3:
 
-        Console.WriteLine("Please Enter your height : "); 
+        Console.WriteLine("Please Enter your height in CM : "); 
         double height1 = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Please Enter your weight : ");
+        Console.WriteLine("Please Enter your weight in KG: ");
         double weight1 = double.Parse(Console.ReadLine());
 
-        double Bmi = weight1 / (height1  * height1);
+        double Bmi = weight1 / ((height1 / 100)  * (height1 / 100));
         Console.WriteLine("Your Bmi is equel " + Bmi);
 
 
