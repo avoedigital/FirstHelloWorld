@@ -17,7 +17,8 @@ class HomeWork
     {
         int count = 0;
 
-        
+        Random rand = new Random();
+        int computernumber = rand.Next(0, 20);
 
 
         while (count < 3) {
@@ -25,8 +26,7 @@ class HomeWork
             Console.WriteLine("Enter Your Number Under 20....");
             int userinput = Int32.Parse(Console.ReadLine());
 
-            Random rand = new Random();
-            int computernumber = rand.Next(0, 20);  
+              
             
             
 
@@ -35,7 +35,12 @@ class HomeWork
                 Console.WriteLine("Computer Number is.." + computernumber + " " + "You Won");
                 return;
                 
-               }
+               } else if (userinput > computernumber && count != 3) {
+                Console.WriteLine("Your number is Higher");
+            } else if (userinput< computernumber && count != 3) {
+
+                Console.WriteLine("Your number is Lower");
+                }
          
 
         } 
